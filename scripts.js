@@ -11,17 +11,15 @@ function userSelection(){
         else if (player === "P"){
             alert ("you have selected Paper")
            return player
-            
         }
         else if (player === "S"){
             alert("you have selected Scissors")
             return player
         }
-        else{ (player !== ("RPS"))
+        else{
             alert("invalid selection")
             userSelection()
         }
-        
     } 
 }
 console.log(player)
