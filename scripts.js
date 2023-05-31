@@ -23,6 +23,7 @@ while (playAgain === true) {
             else{
                 alert("invalid selection")
                 userSelection()
+                break
             }
         } 
     }
