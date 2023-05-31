@@ -1,5 +1,6 @@
 while (playAgain = true) {
-
+let playerWins = 1;
+let pcWins = 1;
     player = userSelection()
     pcMove = pcSelection()
     function userSelection(){
@@ -47,21 +48,27 @@ while (playAgain = true) {
     function resutlt (){
         if (player ==="R" && pcMove === "S"){
             alert("player wins")
+            alert(`player points : ${playerWins++}`)
         }
         else if (player ==="P" && pcMove === "R"){
             alert("player wins")
+            alert(`player points : ${playerWins++}`)
+
         }
         else if (player ==="S" && pcMove === "P"){
             alert("player wins")
+            alert(`player points : ${playerWins++}`)
+
         }
         else if (player === pcMove){
             alert("its a tie")
         }
         else{
             alert("pc wins")
+            alert(`Pc points : ${pcWins++}`)
+
         }
     }
     
     playAgain  = confirm("play again ?")
-    return
 }
