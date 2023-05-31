@@ -1,4 +1,6 @@
-while (playAgain = true) {
+playAgain  = confirm("play Game")
+
+while (playAgain === true) {
 let playerWins = 1;
 let pcWins = 1;
     player = userSelection()
