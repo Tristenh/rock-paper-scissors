@@ -1,8 +1,7 @@
 playAgain  = confirm("play Game")
-
+let playerWins = 0;
+let pcWins = 0;
 while (playAgain === true) {
-let playerWins = 1;
-let pcWins = 1;
     player = userSelection()
     pcMove = pcSelection()
     function userSelection(){
@@ -15,7 +14,7 @@ let pcWins = 1;
             }
             else if (player === "P"){
                 alert ("you have selected Paper")
-               return player
+                return player
             }
             else if (player === "S"){
                 alert("you have selected Scissors")
@@ -38,38 +37,39 @@ let pcWins = 1;
         }
         else if (pcMove === "P"){
             alert ("Pc has selected Paper")
-           return pcMove
+            return pcMove
         }
         else if (pcMove === "S"){
             alert("Pc has selected Scissors")
             return pcMove
-    }
+        }
     }
     
     resutlt()
     function resutlt (){
         if (player ==="R" && pcMove === "S"){
             alert("player wins")
-            alert(`player points : ${playerWins++}`)
+          playerWins++
         }
         else if (player ==="P" && pcMove === "R"){
             alert("player wins")
-            alert(`player points : ${playerWins++}`)
-
+            playerWins++
+            
         }
         else if (player ==="S" && pcMove === "P"){
             alert("player wins")
-            alert(`player points : ${playerWins++}`)
-
+           playerWins++
+            
         }
         else if (player === pcMove){
             alert("its a tie")
         }
         else{
             alert("pc wins")
-            alert(`Pc points : ${pcWins++}`)
-
+            pcWins++
+            
         }
+        alert(`score : player ${playerWins} pc ${pcWins}`)
     }
     
     playAgain  = confirm("play again ?")
