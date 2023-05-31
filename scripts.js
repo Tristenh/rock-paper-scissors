@@ -45,3 +45,16 @@ function resutlt (){
         alert("pc wins")
     }
 }
+playAgain()
+function playAgain(){
+   let playConfirm = confirm("play again ?")
+    if (playConfirm){
+        userSelection()
+        pcSelection()
+        resutlt()
+        playAgain()
+    }
+    else{
+        return
+    }
+}
