@@ -22,7 +22,6 @@ function userSelection(){
         }
     } 
 }
-pcSelection()
 let pcMove = pcSelection()
 function pcSelection(){
     let char = ["Rock", "Paper", "Scissors"];
@@ -31,5 +30,18 @@ function pcSelection(){
     alert(`pc has chosen ${pcMove}`)
     return pcMove
 }
-
-console.log(pcMove)
+resutlt()
+function resutlt (){
+    if (player ==="R" && pcMove === "Scissors"){
+        alert("player wins")
+    }
+    else if (player ==="P" && pcMove === "Rock"){
+        alert("player wins")
+    }
+    else if (player ==="S" && pcMove === "Paper"){
+        alert("player wins")
+    }
+    else{
+        alert("pc wins")
+    }
+}
