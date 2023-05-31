@@ -22,4 +22,14 @@ function userSelection(){
         }
     } 
 }
-console.log(player)
+pcSelection()
+function pcSelection(){
+    let char = ["Rock", "Paper", "Scissors"];
+    let randomIndex = Math.floor(Math.random() * char.length)
+    let pcMove = char[randomIndex]
+    alert(`pc has chosen ${pcMove}`)
+    for (i = 0; i < char; i++ ){
+    }
+    
+}
+
